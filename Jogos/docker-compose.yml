@@ -1,0 +1,20 @@
+version: '3'
+
+volumes:
+ fishingdata:
+ fishingdata-config:
+
+services:
+  web:
+    image: nginx:1.23.1-alpine
+    restart: unless-stopped
+    container_name: nginx
+    environment:
+     - NGINX_PORT=80
+    volumes:
+     - /etc/localtime:/etc/localtime:ro
+     - /etc/timezone:/etc/timezone:ro
+     - fishingdata:/usr/share/nginx/html
+     - fishingdata-config:/etc/nginx
+    ports:
+     - "4780:80"
