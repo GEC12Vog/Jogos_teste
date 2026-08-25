@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuMxgFlhxxSmkDlvofpaat_i9AGcK0WFP7bfN4alRINA&s=10">
+  <link rel="stylesheet" href="style.css">
+  <div>
+    <h1>Jogo da Velha</h1>
+  </div>
+  <div id="status">Vez do jogador: X</div>
+</head>
+<body>
+  <div class="game-layout">
+    <div class="score-box" id="score-x">
+      Pontos do Jogador X: 0
+    </div>
+    <div class="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+        <div class="score-box" id="score-o">
+      Pontos do Jogador O: 0
+    </div>
+  </div>
+  
+  <div>
+    <button id="restart">Reiniciar Jogo</button>
+    <button id="placar-restart"> Reiniciar Placar</button>
+  </div>
+  <div class="back">
+      <button id="back" onclick="window.location.href='http://192.168.250.21'"> Voltar ao painel inicial </button>
+    </div>
+    <div class="tm-display">
+      <p>©Dudu</p>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
